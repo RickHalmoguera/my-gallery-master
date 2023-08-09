@@ -67,6 +67,7 @@ header img{
         "c-gallery__photo1 c-gallery__photo2 c-gallery__photo2"
         "c-gallery__photo3 c-gallery__photo3 c-gallery__photo4"
         "c-gallery__photo5 c-gallery__photo6 c-gallery__photo4";
+        margin-bottom: 2em;
 }
 
 .c-gallery__photo1 { 
