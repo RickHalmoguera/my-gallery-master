@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    padding: 2em;
+    max-width: 900px;
+    min-height: 100svh;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+header img{
+    border-radius: 16px;
+    max-width: 217px;
+}
+.c-header__data{
+    display: flex;
+    gap: 1em;
+}
+
+.c-data__bubble{
+    width: 78px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-data__bubble p {
+    color: #4E5150;
+    font-size: 12px;
+}
+
+.c-data__bubble span {
+    color: var(--gray-4, #BDBDBD);
+    font-size: 12px;
+}
+
+.c-gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1em;
+    grid-template-areas:
+        "c-gallery__photo1 c-gallery__photo2 c-gallery__photo2"
+        "c-gallery__photo3 c-gallery__photo3 c-gallery__photo4"
+        "c-gallery__photo5 c-gallery__photo6 c-gallery__photo4";
+}
+
+.c-gallery__photo1 { 
+    width: 100%;
+    height: 100%;
+    grid-area: c-gallery__photo1; 
+}
+.c-gallery__photo2 {
+    width: 100%;
+    height: 100%;       
+    grid-area: c-gallery__photo2; 
+}
+.c-gallery__photo3 {
+    width: 100%;
+    height: 100%;          
+    grid-area: c-gallery__photo3; 
+}
+.c-gallery__photo4 { 
+    width: 100%;
+    height: 100%;
+    grid-area: c-gallery__photo4; 
+}
+.c-gallery__photo5 { 
+    width: 100%;
+    height: 100%;
+    grid-area: c-gallery__photo5; 
+}
+.c-gallery__photo6 { 
+    width: 100%;
+    height: 100%;
+    grid-area: c-gallery__photo6; 
+}
+
+.c-gallery img{
+    border-radius: 12px; 
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    color: #B9BDCF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
